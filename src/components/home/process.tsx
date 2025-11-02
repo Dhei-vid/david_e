@@ -1,4 +1,7 @@
+"use client";
+
 import CardX from "@/components/x-ui/cardx";
+import AnimateText1 from "../animations/animate-text1";
 
 const Process = () => {
   return (
@@ -39,7 +42,7 @@ const Process = () => {
               description:
                 "We launch your brand across all channels creating a consistent experience that grows with you.",
             },
-          ].map((step) => (
+          ].map((step, index) => (
             <div key={step.number} className="even:pt-12">
               <CardX
                 className={
@@ -52,10 +55,18 @@ const Process = () => {
 
                 <div className="space-y-2 mt-auto">
                   <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">
-                    {step.title}
+                    <AnimateText1
+                      text={step.title}
+                      delay={index * 6}
+                      duration={0.1 * index}
+                    />
                   </h3>
                   <p className="text-gray-500 dark:text-gray-300 leading-relaxed">
-                    {step.description}
+                    <AnimateText1
+                      text={step.description}
+                      delay={index * 6}
+                      duration={0.5 * index}
+                    />
                   </p>
                 </div>
               </CardX>

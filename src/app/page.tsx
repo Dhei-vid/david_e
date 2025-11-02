@@ -4,8 +4,9 @@ import Navbar from "@/components/navigation/navbar";
 import Footer from "@/components/navigation/footer";
 import FAQ from "@/components/x-ui/faq";
 import ButtonX from "@/components/x-ui/button";
-import Skills from "@/components/home/skills";
 
+import Skills from "@/components/home/skills";
+import AgencyBanner from "@/components/home/growth-banner";
 import TestimonialPreview from "@/components/home/testimonial";
 import ProjectsPreview from "@/components/projects/project-preview";
 import Process from "@/components/home/process";
@@ -61,38 +62,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-16 sm:py-20 bg-gray-50 dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-              Hello!
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              We help brands grow with standout design, clear branding, and
-              content that drives results.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {[
-              "Strategy",
-              "UX Design",
-              "Branding",
-              "Animation",
-              "Research",
-              "Design Systems",
-            ].map((service) => (
-              <div key={service} className="text-center">
-                <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-200 dark:border-gray-700">
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-100">
-                    {service}
-                  </h3>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+      {/* Agency Section */}
+      <section className="py-16 sm:py-20">
+        <AgencyBanner
+          headerText={"Working with HAID"}
+          bodyText={
+            "I work with an Agency HAID Technologies to bring your applications both Web and Mobile to life."
+          }
+        />
       </section>
 
       {/* Process Section */}
