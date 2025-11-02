@@ -4,7 +4,15 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --color-glass: var(--glass);
+  --color-glass-100: var(--glass-100);
+  --color-glass-200: var(--glass-200);
+  --color-glass-300: var(--glass-300);
+  --color-glass-400: var(--glass-400);
+  --color-glass-500: var(--glass-500);
+  --color-glass-600: var(--glass-600);
+  --color-glass-700: var(--glass-700);
+  --color-glass-800: var(--glass-800);
+  --color-glass-900: var(--glass-900);
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -46,7 +54,15 @@
 }
 
 :root {
-  --glass: #ffffff4d;
+  --glass-100: #ffffffff;
+  --glass-200: #ffffffb3;
+  --glass-300: #ffffff80;
+  --glass-400: #ffffff66;
+  --glass-500: #ffffff4d;
+  --glass-600: #ffffff1a;
+  --glass-700: #00000066;
+  --glass-800: #000000b3;
+  --glass-900: #000000;
 
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -83,6 +99,16 @@
 }
 
 .dark {
+  --glass-100: #000000;
+  --glass-200: #000000b3;
+  --glass-300: #00000080;
+  --glass-400: #00000066;
+  --glass-500: #0000004d;
+  --glass-600: #ffffff1a;
+  --glass-700: #ffffff33;
+  --glass-800: #ffffff80;
+  --glass-900: #ffffffff;
+
   --background: oklch(0.13 0.028 261.692);
   --foreground: oklch(0.985 0.002 247.839);
   --card: oklch(0.21 0.034 264.665);
@@ -118,81 +144,4 @@
 
 * {
   will-change: transform;
-}
-
-/* Custom dark mode utilities */
-.dark .bg-white {
-  @apply bg-gray-900;
-}
-
-.dark .bg-gray-50 {
-  @apply bg-gray-800;
-}
-
-.dark .bg-gray-100 {
-  @apply bg-gray-700;
-}
-
-.dark .bg-gray-200 {
-  @apply bg-gray-600;
-}
-
-.dark .text-gray-900 {
-  @apply text-gray-100;
-}
-
-.dark .text-gray-800 {
-  @apply text-gray-200;
-}
-
-.dark .text-gray-700 {
-  @apply text-gray-300;
-}
-
-.dark .text-gray-600 {
-  @apply text-gray-400;
-}
-
-.dark .text-gray-500 {
-  @apply text-gray-500;
-}
-
-.dark .border-gray-200 {
-  @apply border-gray-700;
-}
-
-.dark .border-gray-300 {
-  @apply border-gray-600;
-}
-
-.dark .hover\:bg-gray-50:hover {
-  @apply hover:bg-gray-800;
-}
-
-.dark .hover\:bg-gray-100:hover {
-  @apply hover:bg-gray-700;
-}
-
-.dark .hover\:text-gray-900:hover {
-  @apply hover:text-gray-100;
-}
-
-.dark .hover\:text-gray-600:hover {
-  @apply hover:text-gray-300;
-}
-
-.dark .hover\:text-gray-700:hover {
-  @apply hover:text-gray-200;
-}
-
-.dark .shadow-sm {
-  @apply shadow-lg;
-}
-
-.dark .shadow-md {
-  @apply shadow-xl;
-}
-
-.dark .shadow-lg {
-  @apply shadow-2xl;
 }

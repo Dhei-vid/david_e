@@ -32,7 +32,9 @@ const Footer = () => {
             {/* Text */}
             <p className="text-white dark:text-gray-900 font-semibold text-6xl md:text-8xl">
               Let&apos;s{" "}
-              <span className="text-glass dark:text-gray-900/50">Connect</span>
+              <span className="text-glass-500 dark:text-gray-900/50">
+                Connect
+              </span>
             </p>
             <p className="text-white dark:text-gray-900 text-lg md:text-xl text-gray-300 max-w-2xl">
               Feel free to contact me if you have any questions. I&apos;m
@@ -43,10 +45,10 @@ const Footer = () => {
         </div>
 
         {/* Footer bottom section */}
-        <div className="row-span-1 flex flex-row items-center justify-between p-6 border-t border-glass dark:border-gray-900/50 h-full">
+        <div className="row-span-1 flex flex-row items-center justify-between p-6 border-t border-glass-500 dark:border-gray-900/50 h-full">
           {/* Copyright */}
-          <div className="border-y-1 border-glass dark:border-gray-900/50 p-5">
-            <p className="text-glass dark:text-gray-900/50 text-sm">
+          <div className="border-y-1 border-glass-500 dark:border-gray-900/50 p-5">
+            <p className="text-glass-500 dark:text-gray-900/50 text-sm">
               © {year} David E.
             </p>
           </div>
@@ -58,9 +60,9 @@ const Footer = () => {
               <motion.div
                 key={label}
                 whileHover={{ scale: 1.1 }}
-                className="border border-glass dark:border-gray-900/50 p-2 rounded-full cursor-pointer hover:bg-glass hover:text-gray-700"
+                className="border border-glass-500 dark:border-gray-900/50 p-2 rounded-full cursor-pointer hover:bg-glass-500 hover:text-gray-700"
               >
-                <Icon className="text-glass dark:text-gray-900/50" />
+                <Icon className="text-glass-500 dark:text-gray-900/50" />
               </motion.div>
             ))}
           </div>

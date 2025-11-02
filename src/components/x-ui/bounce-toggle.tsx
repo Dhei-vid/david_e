@@ -76,9 +76,9 @@ function Stylesheet() {
         }
 
         .switch {
-          width: 90px;
-          height: 40px;
-          background-color: rgba(179, 118, 118, 0.2);
+          width: 68px;
+          height: 30px;
+          background-color: rgba(179, 118, 120, 0.2);
           display: flex;
           justify-content: flex-start; /* Start on the left */
           align-items: center;
@@ -91,9 +91,14 @@ function Stylesheet() {
           justify-content: flex-end; /* Move ball to the right */
         }
 
+        .switch:hover {
+          background-color: red;
+          transition: background-color 0.8s ease-in-out;
+        }
+
         .ball {
-          width: 50px;
-          height: 30px;
+          width: 38px;
+          height: 23px;
           background-color: #f5f5f5;
           border-radius: 50px;
           will-change: transform;
