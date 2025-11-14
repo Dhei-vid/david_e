@@ -35,6 +35,7 @@ const AnimateText1: FC<IAnimateText> = ({ text, delay = 0, duration }) => {
           key={i}
           variants={charVariants}
           transition={{ duration: duration }}
+          className="italic"
         >
           {char}
         </motion.span>

@@ -18,7 +18,7 @@ export function ThemeToggle() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          className="border border-glass-300"
+          className="bg-gray-100 border-none"
           variant="outline"
           size="icon"
         >

@@ -13,15 +13,11 @@ interface IAgencyBanner {
 const AgencyBanner: FC<IAgencyBanner> = ({ headerText, bodyText }) => {
   return (
     <div className={"max-w-3xl mx-auto gap-6 p-2 flex flex-col items-center"}>
-      <div className="flex flex-col items-center space-y-4">
-        <Badge className={"bg-glass-300 text-glass-900 w-fit"}>
+      <div className="flex flex-col items-center space-y-4 mb-8">
+        <Badge className={"bg-glass-300 text-glass-900 w-fit text-red-500"}>
           {headerText}
         </Badge>
-        <p
-          className={
-            "border border-red-400 text-lg 2xl:text-3xl text-center text-grey-800"
-          }
-        >
+        <p className={"text-lg 2xl:text-3xl text-center text-grey-800"}>
           <AnimateText1 text={bodyText} delay={1} />
         </p>
       </div>

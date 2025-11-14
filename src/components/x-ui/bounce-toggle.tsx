@@ -110,9 +110,9 @@ function Stylesheet() {
 
 export default function BounceToggle({ isOn, setIsOn }: ToggleSwitchProps) {
   return (
-    <div>
+    <motion.div layout>
       <ToggleSwitch isOn={isOn} setIsOn={setIsOn} />
       <Stylesheet />
-    </div>
+    </motion.div>
   );
 }
