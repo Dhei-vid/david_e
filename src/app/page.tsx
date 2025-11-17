@@ -15,19 +15,12 @@ import Process from "@/components/home/process";
 
 export default function Home() {
   return (
-    <div className="min-h-screen dark:bg-transparent">
-      <Header currentPage="/" />
+    <div className="">
       {/* <Navbar /> */}
-      {/* 
-      <section className="grid place-content-center gap-2 px-8 py-24 text-black">
-        <FlipLink href="#">Twitter</FlipLink>
-        <FlipLink href="#">Linkedin</FlipLink>
-        <FlipLink href="#">Facebook</FlipLink>
-        <FlipLink href="#">Instagram</FlipLink>
-      </section> */}
+      <Header currentPage="/" />
 
       {/* Hero Section - Denqid Style */}
-      <section className="z-10 relative pt-20 sm:pt-24 pb-16 sm:pb-20 overflow-hidden">
+      <section className="pt-20 sm:pt-24 pb-16 sm:pb-20 overflow-hidden bg-red-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             {/* Availability Badge */}
@@ -129,3 +122,10 @@ export default function Home() {
     </div>
   );
 }
+
+// <section className="grid place-content-center gap-2 px-8 py-24 text-black">
+//       <FlipLink href="#">Twitter</FlipLink>
+//       <FlipLink href="#">Linkedin</FlipLink>
+//       <FlipLink href="#">Facebook</FlipLink>
+//       <FlipLink href="#">Instagram</FlipLink>
+//     </section> */}

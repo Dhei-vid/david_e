@@ -1,5 +1,6 @@
 import { Toaster } from "@/components/ui/sonner";
 import Footer from "../../components/navigation/footer";
+import { Header } from "@/components/navigation/Header";
 
 export default function MainLayout({
   children,
@@ -9,6 +10,7 @@ export default function MainLayout({
   return (
     <main>
       <Toaster />
+      <Header />
       <div>{children}</div>
       <Footer />
     </main>
